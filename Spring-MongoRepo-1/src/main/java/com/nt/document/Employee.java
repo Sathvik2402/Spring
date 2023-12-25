@@ -13,7 +13,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
-@Document(collection="employee")
+@Document(collection="Employee")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
