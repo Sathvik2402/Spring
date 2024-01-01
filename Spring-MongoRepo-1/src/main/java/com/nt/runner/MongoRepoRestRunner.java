@@ -27,22 +27,22 @@ public class MongoRepoRestRunner implements CommandLineRunner {
 //						LocalDateTime.now()
 //						)
 ////				));
-		List<Employee> el=List.of(
-				new Employee(
-						"harry",
-						"la",
-						70000.0f,
-						true,
-						LocalDateTime.now()
-						),new Employee(
-								"ron",
-								"ny",
-								40000.0f,
-								false,
-								LocalDateTime.now()
-								)
-				);
-		serve.saveEmployeesInBatch(el);
+//		List<Employee> el=List.of(
+//				new Employee(
+//						"harry",
+//						"la",
+//						70000.0f,
+//						true,
+//						LocalDateTime.now()
+//						),new Employee(
+//								"ron",
+//								"ny",
+//								40000.0f,
+//								false,
+//								LocalDateTime.now()
+//								)
+//				);
+//		serve.saveEmployeesInBatch(el);
 ////	
 		serve.getEmployeesInBatch().forEach(System.out::println);
 		
