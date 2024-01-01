@@ -57,4 +57,13 @@ public class OTMBiMgmtServiceImpl implements OTMBiMgmtService{
 	System.out.println(idval+" "+idval2+" person saved with phone numbers"+ph1.getMobileno()+"and"+ph2.getMobileno());  
 	
 	}
+@Override
+public void loadDataUsingParent() {
+	// TODO Auto-generated method stub
+	List<Person> li=prepo.findAll();
+	li.forEach(person->{
+		System.out.println(person.getPname());
+		System.out.println(person.getPhones().toString());
+	});
+}
 }

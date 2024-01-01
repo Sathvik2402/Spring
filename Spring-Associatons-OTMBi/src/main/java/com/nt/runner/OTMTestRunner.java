@@ -16,7 +16,8 @@ public class OTMTestRunner implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		
-		serv.saveDataUsingChild();
+//		serv.saveDataUsingChild();
+		serv.loadDataUsingParent();
 	}
 
 }
