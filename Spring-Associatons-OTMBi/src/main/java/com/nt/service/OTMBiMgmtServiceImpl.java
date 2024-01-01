@@ -1,7 +1,7 @@
 package com.nt.service;
 
 import java.util.List;
-import java.util.Set;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,11 +34,10 @@ public class OTMBiMgmtServiceImpl implements OTMBiMgmtService{
 		p.setPhones(List.of(ph1,ph2));
 		
 //		save obj
-		int idval=prepo.save(p).getPid();
+		int idval=prepo.save(p).getPid();System.out.println(idval);
 	}
 @Override
 	public void saveDataUsingChild() {
-		// TODO Auto-generated method stub
 //	create child obj
 	PhoneNumber ph1=new PhoneNumber(11223345L,"idea","office");
 	PhoneNumber ph2=new PhoneNumber(10214520L,"jio","home");
@@ -59,7 +58,7 @@ public class OTMBiMgmtServiceImpl implements OTMBiMgmtService{
 	}
 @Override
 public void loadDataUsingParent() {
-	// TODO Auto-generated method stub
+	
 	List<Person> li=prepo.findAll();
 	li.forEach(person->{
 		System.out.println(person.getPname());
