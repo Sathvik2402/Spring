@@ -2,7 +2,7 @@ package com.nt.service;
 
 import java.util.List;
 
-
+import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -62,7 +62,10 @@ public void loadDataUsingParent() {
 	List<Person> li=prepo.findAll();
 	li.forEach(person->{
 		System.out.println(person.getPname());
-		System.out.println(person.getPhones().toString());
+		List<PhoneNumber> li1=person.getPhones();
+	li1.forEach(phones->{
+		System.out.println(phones.getMobileno());
+	});
 	});
 }
 }
