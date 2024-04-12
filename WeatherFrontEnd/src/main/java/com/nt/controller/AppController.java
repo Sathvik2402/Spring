@@ -1,49 +1,22 @@
 package com.nt.controller;
 
-import java.io.File;
-import java.io.IOException;
-import java.lang.ProcessBuilder.Redirect;
-import java.net.InetAddress;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Arrays;
-import java.util.Map;
 
-import org.apache.catalina.realm.UserDatabaseRealm;
-import org.apache.catalina.util.RequestUtil;
+import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpRequest;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.context.request.RequestAttributes;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
-import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
-import com.maxmind.geoip2.DatabaseReader;
-import com.maxmind.geoip2.exception.GeoIp2Exception;
-import com.maxmind.geoip2.model.CityResponse;
 import com.nt.entity.Form;
 import com.nt.entity.Root;
 import com.nt.entity2.List;
 import com.nt.validator.FieldsValidator;
 
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.validation.constraints.Pattern;
 
 @Controller
-//@ResponseBody
 public class AppController {
 	@Autowired
 		private FieldsValidator fvalidator;
