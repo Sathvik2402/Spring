@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/report.css}"/>
+</head>
+<body th:style="'background-image:url(' + @{/image/dark.png} + '); background-repeat: no-repeat, repeat; background-size: cover;color:white'">
+<table class="center">
+<tr>
+<th th:text="${temp}"></th>
+<td>C</td>
+</tr>
+<tr>
+<td>Feel</td>
+<td th:text="${feel}"></td>
+</tr>
+<tr>
+<td>Sky</td>
+<td th:text="${desc}"></td>
+</tr>
+<tr>
+<td>Wind Speed</td>
+<td th:text="${wind}"></td>
+</tr>
+<tr>
+<td>City</td>
+<td th:text="${city}"></td>
+</tr>
+</table>
+<a href="./" style="color:white;text-decoration:none;font-size:15px; border:solid 1px">HOME</a>
+</body>
+</html>

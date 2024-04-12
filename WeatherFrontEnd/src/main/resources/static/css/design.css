@@ -1,0 +1,15 @@
+
+
+body{
+	color:white;
+   /*  background-image: url('/picture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  */
+}
+
+.center{
+	font-size:30px;
+	margin-left:auto;
+	margin-right:auto;
+}

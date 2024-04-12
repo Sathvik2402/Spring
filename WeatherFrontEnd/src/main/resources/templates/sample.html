@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/design.css}"/>
+</head>
+<body th:style="'background-image:url(' + @{/image/dark.png} + '); background-repeat: no-repeat, repeat; background-size:cover;color:white'">
+<form method="POST" action="submit">
+  <table class="center">
+  <tr><td>Country Code </td>
+    <td><input type="text" name="ccode" ></td></tr>
+   <tr><td>Zip Code</td>
+    <td> <input type="text" name="zcode" ></td></tr>
+    <tr><td></td><td><input type="submit" value="submit" ></td></tr>
+  </table>
+</form>
+
+
+</body>
+</html>
