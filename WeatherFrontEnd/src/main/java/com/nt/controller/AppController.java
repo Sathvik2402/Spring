@@ -47,29 +47,7 @@ import jakarta.validation.constraints.Pattern;
 public class AppController {
 	@Autowired
 		private FieldsValidator fvalidator;
-	//get location through ip address of request
-	@ResponseBody
-	@GetMapping("/loc")
-	public ResponseEntity<String> locateClient(HttpServletRequest req) throws IOException, GeoIp2Exception 
-	{
-		
-	String ip="43.230.212.233";
-		String dblocation="C:\\Users\\Admin\\Downloads\\GeoLite2-City_20240319\\GeoLite2-City_20240319\\GeoLite2-City.mmdb";
-		
-		File database= new File(dblocation);
-		DatabaseReader dbr=new DatabaseReader.Builder(database).build();
-		
-		InetAddress ipa= InetAddress.getByName(ip);
-		CityResponse response=dbr.city(ipa);
-		String city=response.getCity().getName();
-		String zip=response.getPostal().getCode();
-		String country=response.getCountry().getName();
-		String state=response.getLeastSpecificSubdivision().getName();
-		
-		return new ResponseEntity<String>("country "+country+" city "+city+" ZIP "+zip+" State "+state,HttpStatus.OK);
-	}
-	
-	
+
 	
 	@GetMapping("/")
 	public String getWeather1(Map<String, Object> map,Model model) {
