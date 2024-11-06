@@ -1,0 +1,148 @@
+@charset "ISO-8859-1";
+
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*:not(i) {
+	font-family: "Roboto Mono", monospace;
+	color: #ffffff;
+}
+body {
+
+	background-image:url('https://img.freepik.com/free-photo/2d-graphic-colorful-wallpaper-with-grainy-gradients_23-2151001566.jpg?t=st=1720457977~exp=1720461577~hmac=0ad4f714ac21ae16b4ef8edbc70046b0575487f298d21123d93f8a2c8af96b34&w=1380') ;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.box1 {
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	top: 30%;
+	left: 50%;
+}
+.container1 {
+	width: 1000px;
+}
+
+
+.box {
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	top: 70%;
+	left: 29.7%;
+}
+
+.container {
+	width: 220px;
+}
+
+.box2 {
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	top: 70%;
+	left: 43.2%;
+}
+
+
+.box3 {
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	top: 70%;
+	left:56.8% ;
+}
+
+.box4 {
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	top: 70%;
+	left: 70.3%;
+	
+}
+.n td{
+	  text-align: center;
+	  border:17px solid rgba(255, 255, 255, 0.0);
+}
+
+.center {
+	font-size:20px;
+	font-weight:bold;
+	text-align: center;
+	  border:3px solid rgba(255, 255, 255, 0.0);
+}
+.m{
+text-align:left;	
+	
+}
+.big{
+	font-size:60px;
+	font-weight: bold;
+}
+.feel{
+	font-size:25px;
+	font-weight:bold;
+}
+.place{
+	font-size:25px;
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+.clock {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.06);
+	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(15px);
+	padding: 25px 25px;
+	-webkit-box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
+	border: 1.5px solid rgba(255, 255, 255, 0.06);
+	border-radius: 8px;
+}
+
+
+
+.wrapper {
+	text-align: center;
+}
+#time {
+	font-size: 40px;
+	display: inline-block;
+}
+#day {
+	position: relative;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #c5c5c5;
+	text-align: center;
+}
+#midday {
+	display: inline-block;
+	font-size: 30px;
+}
+
+
+
