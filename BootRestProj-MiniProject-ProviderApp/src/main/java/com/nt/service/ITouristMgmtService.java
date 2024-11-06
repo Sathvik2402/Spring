@@ -1,0 +1,13 @@
+package com.nt.service;
+
+
+import java.util.List;
+
+import com.nt.entity.Tourist;
+
+public interface ITouristMgmtService {
+
+	public String registerTourist(Tourist tourist);
+	public List<Tourist> showAllTourist();
+	public List<Tourist> findByCity(String city1,String city2,String city3);
+}
